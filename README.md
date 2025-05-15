@@ -83,7 +83,3 @@ python src/extended_end_to_end_test.py data/example_inputs/input.txt --rules src
 ```bash
 python src/extended_end_to_end_test.py tests/scenarios --batch --output results/batch_results
 ```
-
-## License
-
-This project is open source and available under the MIT License. 
