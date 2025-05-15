@@ -5,7 +5,7 @@ A system that combines Natural Language Processing (NLP) with Answer Set Program
 ## Project Structure
 
 ```
-clingo_demo/
+hybrid-llm-consistency-verifier/
 ├── src/                  # Source code
 │   ├── extractors/       # Fact extraction modules
 │   ├── solvers/          # ASP solvers and reasoning modules
