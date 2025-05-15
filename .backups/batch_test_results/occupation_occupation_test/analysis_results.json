@@ -1,0 +1,30 @@
+{
+  "input_file": "test_data/occupation/occupation_test.txt",
+  "rules_file": "advanced_domain_rules.lp",
+  "total_facts": 10,
+  "is_consistent": false,
+  "fact_types": {
+    "person": 5,
+    "gender": {
+      "male": 0,
+      "female": 0
+    },
+    "family": {
+      "parent_of": 0,
+      "child_of": 0
+    },
+    "marriage": {
+      "married": 0,
+      "married_to": 0
+    },
+    "identity": {
+      "same_as": 1
+    },
+    "location": {
+      "lives_in": 0
+    },
+    "occupation": 4,
+    "other": 0
+  },
+  "repairs": []
+}

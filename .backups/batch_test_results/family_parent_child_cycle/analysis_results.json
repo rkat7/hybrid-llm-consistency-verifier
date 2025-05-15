@@ -1,0 +1,30 @@
+{
+  "input_file": "test_data/family/parent_child_cycle.txt",
+  "rules_file": "advanced_domain_rules.lp",
+  "total_facts": 6,
+  "is_consistent": false,
+  "fact_types": {
+    "person": 3,
+    "gender": {
+      "male": 0,
+      "female": 0
+    },
+    "family": {
+      "parent_of": 2,
+      "child_of": 0
+    },
+    "marriage": {
+      "married": 0,
+      "married_to": 0
+    },
+    "identity": {
+      "same_as": 1
+    },
+    "location": {
+      "lives_in": 0
+    },
+    "occupation": 0,
+    "other": 0
+  },
+  "repairs": []
+}

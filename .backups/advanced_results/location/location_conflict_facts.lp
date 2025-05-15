@@ -1,0 +1,10 @@
+person(john).
+person(may).
+married(john).
+married_to(john,may).
+lives_in(john,newyork).
+lives_in(may,boston).
+person(bob).
+minor(bob).
+parent_of(john,bob).
+lives_in(bob,chicago).

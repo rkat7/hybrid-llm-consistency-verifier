@@ -1,0 +1,8 @@
+John is a person.
+May is a person.
+Bob is a person.
+John is the parent of Bob.
+May is the parent of Bob.
+John is married to May.
+Alice is a person.
+Bob is married to Alice. 

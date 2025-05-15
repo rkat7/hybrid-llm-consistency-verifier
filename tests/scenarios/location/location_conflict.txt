@@ -1,0 +1,9 @@
+John is a person.
+May is a person.
+John is married to May.
+John lives in NewYork.
+May lives in Boston.
+Bob is a person.
+Bob is a minor.
+John is the parent of Bob.
+Bob lives in Chicago. 

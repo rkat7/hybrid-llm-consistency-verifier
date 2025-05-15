@@ -1,0 +1,26 @@
+John is a person.
+May is a person.
+Bob is a person.
+Emma is a person.
+Jay is a person.
+Alice is a person.
+John is male.
+May is female.
+Bob is male.
+Emma is female.
+Jay is male.
+Alice is female.
+John is married to May.
+Jay is married to Alice.
+John is the parent of Bob.
+May is the parent of Bob.
+Jay is the parent of Emma.
+Alice is the parent of Emma.
+John lives in NewYork.
+May lives in NewYork.
+Bob lives in NewYork.
+Jay lives in Boston.
+Alice lives in Boston.
+Emma lives in Boston.
+Bob is a minor.
+Emma is a minor. 

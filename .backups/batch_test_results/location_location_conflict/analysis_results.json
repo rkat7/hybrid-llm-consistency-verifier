@@ -1,0 +1,30 @@
+{
+  "input_file": "test_data/location/location_conflict.txt",
+  "rules_file": "advanced_domain_rules.lp",
+  "total_facts": 10,
+  "is_consistent": false,
+  "fact_types": {
+    "person": 3,
+    "gender": {
+      "male": 0,
+      "female": 0
+    },
+    "family": {
+      "parent_of": 1,
+      "child_of": 0
+    },
+    "marriage": {
+      "married": 1,
+      "married_to": 1
+    },
+    "identity": {
+      "same_as": 0
+    },
+    "location": {
+      "lives_in": 3
+    },
+    "occupation": 0,
+    "other": 1
+  },
+  "repairs": []
+}

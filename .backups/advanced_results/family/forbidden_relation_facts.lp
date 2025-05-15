@@ -1,0 +1,10 @@
+person(john).
+person(may).
+person(bob).
+parent_of(john,bob).
+parent_of(may,bob).
+married(john).
+married_to(john,may).
+person(alice).
+married(bob).
+married_to(bob,alice).

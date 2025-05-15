@@ -1,0 +1,10 @@
+John is a person.
+May is a person.
+Jay is a person.
+Alice is a person.
+John works as a doctor.
+May works as a engineer.
+Jay works as a teacher.
+Alice works as a doctor.
+John is the same person as Dr_Smith.
+Dr_Smith is a person. 

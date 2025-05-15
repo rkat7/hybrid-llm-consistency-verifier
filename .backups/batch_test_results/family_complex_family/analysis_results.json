@@ -1,0 +1,30 @@
+{
+  "input_file": "test_data/family/complex_family.txt",
+  "rules_file": "advanced_domain_rules.lp",
+  "total_facts": 28,
+  "is_consistent": true,
+  "fact_types": {
+    "person": 6,
+    "gender": {
+      "male": 3,
+      "female": 3
+    },
+    "family": {
+      "parent_of": 4,
+      "child_of": 0
+    },
+    "marriage": {
+      "married": 2,
+      "married_to": 2
+    },
+    "identity": {
+      "same_as": 0
+    },
+    "location": {
+      "lives_in": 6
+    },
+    "occupation": 0,
+    "other": 2
+  },
+  "repairs": []
+}

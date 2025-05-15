@@ -1,0 +1,44 @@
+{
+  "occupation/occupation_test.txt": {
+    "is_consistent": false,
+    "output_dir": "batch_test_results/occupation_occupation_test",
+    "fact_count": 10,
+    "repair_count": 0
+  },
+  "identity/forbidden_identity.txt": {
+    "is_consistent": false,
+    "output_dir": "batch_test_results/identity_forbidden_identity",
+    "fact_count": 3,
+    "repair_count": 0
+  },
+  "location/location_conflict.txt": {
+    "is_consistent": false,
+    "output_dir": "batch_test_results/location_location_conflict",
+    "fact_count": 10,
+    "repair_count": 0
+  },
+  "family/complex_family.txt": {
+    "is_consistent": true,
+    "output_dir": "batch_test_results/family_complex_family",
+    "fact_count": 28,
+    "repair_count": 0
+  },
+  "family/forbidden_relation.txt": {
+    "is_consistent": false,
+    "output_dir": "batch_test_results/family_forbidden_relation",
+    "fact_count": 10,
+    "repair_count": 0
+  },
+  "family/parent_child_cycle.txt": {
+    "is_consistent": false,
+    "output_dir": "batch_test_results/family_parent_child_cycle",
+    "fact_count": 6,
+    "repair_count": 0
+  },
+  "gender/mixed_gender.txt": {
+    "is_consistent": false,
+    "output_dir": "batch_test_results/gender_mixed_gender",
+    "fact_count": 5,
+    "repair_count": 0
+  }
+}

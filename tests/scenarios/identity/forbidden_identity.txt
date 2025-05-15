@@ -1,0 +1,3 @@
+John is a person.
+Jay is a person.
+John is the same person as Jay. 

@@ -1,0 +1,30 @@
+{
+  "input_file": "test_data/family/forbidden_relation.txt",
+  "rules_file": "advanced_domain_rules.lp",
+  "total_facts": 10,
+  "is_consistent": false,
+  "fact_types": {
+    "person": 4,
+    "gender": {
+      "male": 0,
+      "female": 0
+    },
+    "family": {
+      "parent_of": 2,
+      "child_of": 0
+    },
+    "marriage": {
+      "married": 2,
+      "married_to": 2
+    },
+    "identity": {
+      "same_as": 0
+    },
+    "location": {
+      "lives_in": 0
+    },
+    "occupation": 0,
+    "other": 0
+  },
+  "repairs": []
+}

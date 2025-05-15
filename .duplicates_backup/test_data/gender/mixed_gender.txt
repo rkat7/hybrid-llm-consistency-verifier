@@ -1,0 +1,4 @@
+John is a person.
+John is male.
+John is the same person as Jane.
+Jane is female. 

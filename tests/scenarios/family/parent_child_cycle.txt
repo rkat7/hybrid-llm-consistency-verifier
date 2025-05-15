@@ -1,0 +1,5 @@
+John is a person.
+Bob is a person.
+John is the parent of Bob.
+Bob is the parent of Carl.
+Carl is the same person as John. 
