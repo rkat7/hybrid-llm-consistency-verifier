@@ -1,0 +1,8 @@
+--- Average Values Across Analyzed Snippets ---
+Average 'CodeBERT related': 0.004070
+Average 'CodeBERT unrelated': 0.004378
+Average 'CodeBERT related - CodeBERT unrelated': -0.000308
+Average 'BERT related': 0.006499
+Average 'BERT unrelated': 0.005004
+Average 'BERT related - BERT unrelated': 0.001495
+Average 'CodeBERT related - BERT related': -0.002429

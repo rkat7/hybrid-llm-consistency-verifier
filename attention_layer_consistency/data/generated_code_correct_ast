@@ -1,0 +1,491 @@
+--- Prompt 1/56 ---
+Prompt: Write a python code to add two numbers
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+def add(a,b):
+    return a+b
+
+a=int(input("Enter the first number: "))
+b=int(input("Enter the second number: "))
+
+print("The sum of the two numbers is: ",add(a,b))
+================================================================================
+--- Prompt 2/56 ---
+Prompt: Write a python code to binary search a list
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+def binary_search(arr, x):
+    low = 0
+    high = len(arr) - 1
+    while low <= high:
+        mid = (low + high) // 2
+        if arr[mid] == x:
+            return mid
+        elif arr[mid] < x:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return -1
+================================================================================
+--- Prompt 3/56 ---
+Prompt: Write a python code to DFS traversal of a tree
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.left = None
+        self.right = None
+
+def DFS(root):
+    if root is None:
+        return
+    print(root.data)
+    DFS(root.left)
+    DFS(root.right)
+
+root = Node(1)
+root.left = Node(2)
+root.right = Node(3)
+root.left.left = Node(4)
+root.left.right = Node(5)
+root.right.left = Node(6)
+root.right.right = Node(7)
+
+DFS(root)
+================================================================================
+--- Prompt 4/56 ---
+Prompt: Write a python code to bubble sort
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+def bubble_sort(my_list):
+    for i in range(len(my_list)):
+        for j in range(len(my_list)-1):
+            if my_list[j] > my_list[j+1]:
+                my_list[j], my_list[j+1] = my_list[j+1], my_list[j]
+    return my_list
+================================================================================
+--- Prompt 5/56 ---
+Prompt: Write a python code to check if a number exists in a list
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+list = [1,2,3,4,5,6,7,8,9,10]
+================================================================================
+--- Prompt 6/56 ---
+Prompt: Write a python code to iterate through a 2D matrix
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+def max_row_col(matrix):
+    max_row = []
+    max_col = []
+    for i in range(len(matrix)):
+        max_row.append(max(matrix[i]))
+        max_col.append(max(matrix[i]))
+    return max_row, max_col
+================================================================================
+--- Prompt 7/56 ---
+Prompt: Write a python code to find the maximum element in a list
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+def max_element(list_of_lists):
+    max_val = -1
+    for i in list_of_lists:
+        for j in i:
+            if j > max_val:
+                max_val = j
+    return max_val
+================================================================================
+--- Prompt 8/56 ---
+Prompt: Write a python code to find the minimum element in a list
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+def min_element(list_of_lists):
+    min_val = list_of_lists[0][0]
+    for i in range(len(list_of_lists)):
+        for j in range(len(list_of_lists[i])):
+            if list_of_lists[i][j] < min_val:
+                min_val = list_of_lists[i][j]
+    return min_val
+================================================================================
+--- Prompt 9/56 ---
+Prompt: Write a python code to calculate the average of a list of numbers
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+def average(numbers):
+    return sum(numbers) / len(numbers)
+================================================================================
+--- Prompt 10/56 ---
+Prompt: Write a python code to reverse a string
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+def reverse(s):
+    return s[::-1]
+================================================================================
+--- Prompt 11/56 ---
+Prompt: Write a python code to check if a string is a palindrome
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+def is_palindrome(s):
+    return s == s[::-1]
+================================================================================
+--- Prompt 12/56 ---
+Prompt: Write a python code to count the occurrences of a character in a string
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+def count_char(s, c):
+    count = 0
+    for i in s:
+        if i == c:
+            count += 1
+    return count
+================================================================================
+--- Prompt 13/56 ---
+Prompt: Write a python code to concatenate two strings
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+a = "Hello"
+b = "World"
+================================================================================
+--- Prompt 14/56 ---
+Prompt: Write a python code to convert a list to a string
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+list = ['a','b','c']
+================================================================================
+--- Prompt 15/56 ---
+Prompt: Write a python code to convert a string to a list of characters
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+"Hello World"
+================================================================================
+--- Prompt 16/56 ---
+Prompt: Write a python code to find the length of a list
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+def length(my_list):
+    return len(my_list)
+================================================================================
+--- Prompt 17/56 ---
+Prompt: Write a python code to find the length of a string
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+def length(s):
+    return len(s)
+================================================================================
+--- Prompt 19/56 ---
+Prompt: Write a python code to check if a list is empty
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+def check_list(list):
+    if list == []:
+        return True
+    else:
+        return False
+================================================================================
+--- Prompt 20/56 ---
+Prompt: Write a python code to create an empty list
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+list1 = []
+list1.append(1)
+list1.append(2)
+list1.append(3)
+print(list1)
+================================================================================
+--- Prompt 22/56 ---
+Prompt: Write a python code to add an element to a list
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+list = [1,2,3,4,5,6,7,8,9,10]
+================================================================================
+--- Prompt 23/56 ---
+Prompt: Write a python code to remove an element from a list
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+list = [[1,2,3,4,5,6,7,8,9,10], [1,2,3,4,5,6,7,8,9,10], [1,2,3,4,5,6,7,8,9,10]]
+================================================================================
+--- Prompt 24/56 ---
+Prompt: Write a python code to access an element in a list by index
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+list = [['a', 'b', 'c'], ['d', 'e', 'f'], ['g', 'h', 'i']]
+================================================================================
+--- Prompt 25/56 ---
+Prompt: Write a python code to access an element in a dictionary by key
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+my_dict = {'a': {'b': {'c': 1, 'd': 2}, 'e': {'f': 3, 'g': 4}}}
+================================================================================
+--- Prompt 26/56 ---
+Prompt: Write a python code to iterate through a list
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+list = [[1,2,3,4,5],[6,7,8,9,10],[11,12,13,14,15]]
+================================================================================
+--- Prompt 27/56 ---
+Prompt: Write a python code to iterate through a dictionary
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+
+for key, value in my_dict.items():
+    print(key, value)
+================================================================================
+--- Prompt 28/56 ---
+Prompt: Write a python code to check if a key exists in a dictionary
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+dict = {'a':1, 'b':2, 'c':3}
+================================================================================
+--- Prompt 29/56 ---
+Prompt: Write a python code to check if a value exists in a dictionary
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+================================================================================
+--- Prompt 30/56 ---
+Prompt: Write a python code to find the sum of elements in a list
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+list = [1,2,3,4,5]
+================================================================================
+--- Prompt 31/56 ---
+Prompt: Write a python code to multiply all elements in a list
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+def multiply(list, number):
+    for i in range(len(list)):
+        list[i] = list[i] * number
+    return list
+================================================================================
+--- Prompt 32/56 ---
+Prompt: Write a python code to find the factorial of a number
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+print(factorial(5))
+================================================================================
+--- Prompt 33/56 ---
+Prompt: Write a python code to check if a number is prime
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+def is_prime(n):
+    if n == 1:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+================================================================================
+--- Prompt 34/56 ---
+Prompt: Write a python code to generate Fibonacci series up to n terms
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+def fib(n):
+    if n <= 1:
+        return n
+    else:
+        return fib(n-1) + fib(n-2)
+================================================================================
+--- Prompt 35/56 ---
+Prompt: Write a python code to convert Celsius to Fahrenheit
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+def convert_celsius_to_fahrenheit(celsius):
+    fahrenheit = (celsius * 9/5) + 32
+    return fahrenheit
+================================================================================
+--- Prompt 36/56 ---
+Prompt: Write a python code to convert Fahrenheit to Celsius
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+def fahrenheit_to_celsius(fahrenheit):
+    celsius = (fahrenheit - 32) * 5 / 9
+    return celsius
+================================================================================
+--- Prompt 37/56 ---
+Prompt: Write a python code to calculate the area of a rectangle
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+def area(l,b):
+    return l*b
+
+print(area(5,6))
+================================================================================
+--- Prompt 38/56 ---
+Prompt: Write a python code to calculate the area of a circle
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+import math
+
+def area(r):
+    return math.pi * r**2
+
+print(area(5))
+================================================================================
+--- Prompt 39/56 ---
+Prompt: Write a python code to calculate the perimeter of a rectangle
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+def perimeter(l,b):
+    return 2*(l+b)
+================================================================================
+--- Prompt 40/56 ---
+Prompt: Write a python code to calculate the circumference of a circle
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+import math
+
+def circumference(r):
+    return 2*math.pi*r
+
+print(circumference(5))
+================================================================================
+--- Prompt 41/56 ---
+Prompt: Write a python code to check if a year is a leap year
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+def is_leap_year(year):
+    if year % 4 == 0:
+        if year % 100 == 0:
+            if year % 400 == 0:
+                return True
+            else:
+                return False
+        else:
+            return True
+    else:
+        return False
+================================================================================
+--- Prompt 42/56 ---
+Prompt: Write a python code to generate a random number
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+import random
+
+x = random.randint(1, 100)
+print(x)
+================================================================================
+--- Prompt 44/56 ---
+Prompt: Write a python code to find the greatest common divisor (GCD) of two numbers
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+def gcd(a, b):
+    if a == 0:
+        return b
+    else:
+        return gcd(b % a, a)
+================================================================================
+--- Prompt 46/56 ---
+Prompt: Write a python code to check if a number is even or odd
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+def is_even(n):
+    if n % 2 == 0:
+        return True
+    else:
+        return False
+================================================================================
+--- Prompt 47/56 ---
+Prompt: Write a python code to print "Hello, World!"
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+print("Hello, World!")
+================================================================================
+--- Prompt 48/56 ---
+Prompt: Write a python code to read input from the user
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+import sys
+
+def main():
+    print("Enter the number of rows:")
+    rows = int(input())
+    print("Enter the number of columns:")
+    columns = int(input())
+    print("Enter the elements of the matrix:")
+    matrix = []
+    for i in range(rows):
+        matrix.append([])
+        for j in range(columns):
+            matrix[i].append(int(input()))
+    print_matrix(matrix)
+
+def print_matrix(matrix):
+    for i in range(len(matrix)):
+        for j in range(len(matrix[i])):
+            print(matrix[i][j], end=" ")
+        print()
+
+if __name__ == "__main__":
+    main()
+================================================================================
+--- Prompt 49/56 ---
+Prompt: Write a python code to print output to the console
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+import sys
+
+def print_to_console(text):
+    sys.stdout.write(text)
+
+print_to_console("Hello World")
+================================================================================
+--- Prompt 50/56 ---
+Prompt: Write a python code to create a simple function
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+def sum_list(numbers):
+    return sum(numbers)
+================================================================================
+--- Prompt 51/56 ---
+Prompt: Write a python code to call a function
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+import functions
+
+def main_function():
+    functions.function_to_call()
+================================================================================
+--- Prompt 52/56 ---
+Prompt: Write a python code to use an if-else statement
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+def is_even(n):
+    if n % 2 == 0:
+        return True
+    else:
+        return False
+================================================================================
+--- Prompt 53/56 ---
+Prompt: Write a python code to use a for loop
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+1
+2 3
+4 5 6
+7 8 9 10
+11 12 13 14 15
+================================================================================
+--- Prompt 55/56 ---
+Prompt: Write a python code to sort a list in ascending order
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+def sort(list):
+    for i in range(len(list)):
+        for j in range(i+1,len(list)):
+            if list[i]>list[j]:
+                list[i],list[j]=list[j],list[i]
+    return list
+================================================================================
+--- Prompt 56/56 ---
+Prompt: Write a python code to sort a list in descending order
+Extraction Method: \begin{code}...\end{code}
+Extracted Code Output:
+list = [1,2,3,4,5,6,7,8,9,10]
+================================================================================
