@@ -1,6 +1,6 @@
-# NLP-ASP: Advanced Natural Language Processing with Answer Set Programming
+# NLP-ASP: Natural Language Processing with Answer Set Programming
 
-An advanced system for extracting facts from natural language text, representing them in knowledge graphs, and checking logical consistency using Answer Set Programming.
+A system for extracting facts from natural language text, representing them in knowledge graphs, and checking logical consistency using Answer Set Programming.
 
 ## Features
 
@@ -154,10 +154,6 @@ The system uses Clingo (Answer Set Programming) for logical reasoning. It can:
 - Find minimal inconsistent subsets of facts
 - Generate explanations for inconsistencies
 - Suggest repairs to resolve inconsistencies
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
