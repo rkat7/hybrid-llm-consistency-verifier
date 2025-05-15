@@ -1,0 +1,28 @@
+import glob
+from tasks import process_document
+from llm_rule_extender import extract_rules_from_corpus
+import extract
+import solver
+from tasks import store_facts_in_db, store_consistency_result
+
+
+def process_document_with_rules(doc_path: str, corpus_dir: str, rules_file: str):
+    facts = extract.extract_facts(doc_path)
+    store_facts_in_db(facts)
+extract_rules_from_corpus(corpus_dir=corpus_dir, output_file=rules_file)
+
+    result = solver.check_consistency(
+        facts_file=doc_path.replace('.txt', '.facts.lp'),
+        domain_rules=rules_file
+    )
+    store_consistency_result(doc_path, result)
+
+    return result
+
+if name == "main":
+    docs = glob.glob("corpus/*.txt")
+    for path in docs:
+        # You can choose to enqueue the new process or call the original task
+        # process_document_with_rules(path, "corpus", "auto_rules.lp")
+        process_document.delay(path)
+    print(f"Enqueued {len(docs)} documents.")
