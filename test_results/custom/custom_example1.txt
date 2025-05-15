@@ -1,0 +1,3 @@
+John is a person.
+May is a person.
+John is married to May.

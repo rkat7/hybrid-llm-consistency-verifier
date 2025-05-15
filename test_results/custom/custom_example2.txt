@@ -1,0 +1,5 @@
+John is a person.
+May is a person.
+Jay is a person.
+John is married to May.
+Jay is the same person as John.
